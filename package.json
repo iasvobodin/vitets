@@ -1,0 +1,30 @@
+{
+  "name": "vitets",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc --noEmit && vite build",
+    "serve": "vite preview",
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx,.vue"
+  },
+  "dependencies": {
+    "exiftool-vendored": "^15.6.0",
+    "vue": "^3.2.16",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^16.11.10",
+    "@typescript-eslint/eslint-plugin": "^5.4.0",
+    "@typescript-eslint/parser": "^5.4.0",
+    "@vitejs/plugin-vue": "^1.10.0",
+    "eslint": "^8.3.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-vue": "^8.1.1",
+    "prettier": "^2.4.1",
+    "typescript": "^4.5.2",
+    "vite": "^2.6.14",
+    "vue-eslint-parser": "^8.0.1",
+    "vue-tsc": "^0.29.6"
+  }
+}
