@@ -21,13 +21,13 @@ const httpTrigger: AzureFunction = async function (context: Context, req: HttpRe
     const p: string[] = []
     const dir = await fs.promises.opendir('../../../');
     for await (const dirent of dir) {
-        context.log(dirent.name);
+        // context.log(dirent.name);
         p.push(dirent.name)
     }
     // context.log(dir)
     context.res = {
         // status: 200, /* Defaults to 200 */
-        body: p
+        body: [...p, path.resolve('./'), __dirname]
     };
 
 };
